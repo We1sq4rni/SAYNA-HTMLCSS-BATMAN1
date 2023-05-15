@@ -1,0 +1,80 @@
+html {
+    font-family: 'Rajdhani', sans-serif;
+    background-image: url(../Assets/Illustrations/Bathome1.png);
+    background-repeat: no-repeat;
+    background-color: black;
+    color: white;
+    padding: 50px;
+}
+/* RESPONSIVE*/
+@media screen and (max-width: 768px) {
+    main {
+      flex-direction: column;
+    }
+    
+    section {
+      flex: 1;
+    }
+  }
+
+/*  table {
+    width: 100%;
+    border-collapse: collapse;
+  }*/
+  
+  @media (max-width: 600px) {
+    th, td {
+      white-space: nowrap;
+    }
+  }
+
+/*  .container {
+    max-width: 100%;
+  }
+  
+  .responsive-image {
+    max-width: 100%;
+    height: auto;
+  }*/
+
+/*RESPONSIVE*/   
+  
+img {
+    max-width: 100%;
+    height: auto;
+  }
+   
+nav{
+    /*margin: 50px;*/
+    padding-left:150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul{
+    list-style-type: none;
+}
+ 
+.troix-table{
+    padding: 200px;
+    padding-top: 80px;
+    /*overflow-x: auto;  RESPNSIVE*/
+}
+
+.logos-section1{
+    padding-left: 150px;
+    text-align: center;
+    display: flex;
+   
+}
+
+.section1{
+    margin: 200px;
+    margin-right: 0px;
+    margin-left: 100px;
+}
+.formulaire{
+    margin: 0px;
+    padding: 120x;
+    background:linear-gradient(#eddebf,#19587D)
+}
