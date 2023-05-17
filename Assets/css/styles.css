@@ -1,0 +1,384 @@
+/* Ajout police */
+@font-face {
+    font-family: 'rajdhani';
+    src: url(../police/Rajdhani-Medium.ttf);
+}
+@font-face {
+    font-family: 'space grotesk';
+    src: url(../police/SpaceGrotesk-VariableFont_wght.ttf);
+}
+
+/* @import url */
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&family=Space+Grotesk:wght@700&display=swap');
+
+/*couleur menu type*/
+:root{
+    --yellow-color: #FFFF00;
+    --yellow-light: #F8F184;
+    --blue-color: #1958FD;
+    --red-color: #B11313;
+    --black-color: #0D0E09;
+    --gris-color: #c4c4c4;
+    --white-color: #fff;
+    --gradient-white: #EDDEBF40;
+    --gradient-red: #89000960;
+    --gradient-grey: #EDDEBF40;
+    --gradient-gray: #19587D40;
+
+}
+
+body {
+    font-family: 'Rajdhani', sans-serif;
+    background-image: url(../Illustrations/Bathome1.png);
+    background-repeat: no-repeat;
+    background-color: black;
+    color: white;
+    padding-top: 50px;/**/
+    margin: 0px;
+}
+
+
+/*Nav*/
+nav{
+    /*margin: 50px;*/
+    padding-left:80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul{
+    list-style-type: none;
+}
+dd{
+   text-align: center;
+   font-family: 'Space Grotesk';
+}
+
+
+
+/* DEROULANT */
+
+.scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    right: 1px;
+    top: 230px;
+ }
+ 
+ .scroll .social{
+    margin-top: 15px;
+ }
+
+/* IL EST BATMAN*/ 
+.texte{
+   text-align: center;
+   font-size: 26px;
+}
+#hero h2 {
+   text-align: center;
+}
+
+.batman {
+   margin: 80px;
+   padding: 50px;
+}
+
+.btn {
+   text-decoration: none;
+   color: var(--white-color);
+   font-size: 20px;
+   margin-top: 10px;
+   margin-left: 30px;
+   padding: 30px 50px;
+   background: linear-gradient(80deg, var(--gradient-white), var(--gradient-red));
+   box-shadow: var(--black-color) 20px 20px 60px;
+}
+
+.boutton {
+   margin-left: 270px;
+   margin-top: 80px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+   .batman {
+       margin: 40px;
+       padding: 20px;
+   }
+
+   .btn {
+       margin-left: 0;
+       margin-top: 20px;
+       padding: 20px 40px;
+   }
+
+   .boutton {
+       margin-left: 0;
+       margin-top: 40px;
+       text-align: center;
+   }
+}
+
+
+#hero .fleche{
+    display: block;
+    margin: 0 auto;
+    padding-top: 400px;
+
+}
+/*
+/* BATMAN AU CINEMA---ALLIES*/
+.trois-personnage {
+   display: flex;
+   justify-content: space-between;
+   justify-content: space-around;
+   margin-top: 40px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+   .trois-personnage {
+       flex-wrap: wrap;
+       justify-content: center;
+   }
+
+   .trois-personnage div {
+       margin-bottom: 40px;
+       text-align: center;
+   }
+}
+
+.description {
+   font-size: 20px;
+   text-align: justify;
+   width: 80%;
+ } /**/
+
+ .batman-droit{
+    float: right;
+    padding-left: 100%;
+ }
+ .titre{
+   font-size: 36px;
+ }
+ .titref{
+   font-family: 'Space Grotesk';
+   font-size: 20px;
+ }
+.padding{
+   padding: 50px;
+}
+/* .justice-league{
+   object-fit: contain;
+ }
+
+ .container{}*/
+ /*MULTIMEDIA*/
+ #multimedia .slider-multimedia{
+    display: flex;
+    width: 51%;
+    margin: 40px auto;
+ }
+
+ #multimedia .slider-image{
+    width: 100%;
+ }
+
+ #multimedia .slider-content{
+    padding: 20px;
+    background: linear-gradient(
+    80deg, var(--gradient-grey), var(--gradient-gray)
+   );
+    border-bottom-right-radius: 5%;
+    border-top-right-radius: 5%; 
+ }
+
+#multimedia p{
+   margin: 0px; 
+   font-size: 14px;
+    text-align: justify;
+ } 
+
+ #multimedia button{
+    position: relative;
+    top: 155px;
+    background-color: transparent;
+    border: none;
+ }
+
+ #multimedia button.right{
+    right: -92%;
+ }
+
+ #multimedia .yellow{
+    color: var(--yellow-color);
+ }
+
+
+/*Formulaire*/
+
+ #formulaire{
+    background: linear-gradient(
+    80deg, var(--gradient-grey), var(--gradient-gray)
+   );
+   box-shadow: var(--black-color) 5px 5px 60px;
+   padding: 60px;
+ }
+
+ #formulaire h2{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 32px;
+ }
+
+ #formulaire .titre{
+    display: block;
+   margin: 25px 0;  
+ }
+
+ #formulaire .form{
+    width: 50%;
+    margin: 0 auto;
+ }
+
+ #formulaire .form input[type='email'], textarea{
+    display: block;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width: 80%;
+    border-bottom: 1px solid var(--white-color);
+    background-color: transparent;
+    padding-top: 10px 0 ;
+ }
+
+ #formulaire .form .icon img{
+    transform: rotate(90deg);
+    width: 15px;
+    
+ }
+
+ #formulaire .news{
+    margin: 15px 0;
+    border-bottom: 1px solid var(--white-color);
+ }
+
+ ::placeholder{
+    color: #c4c4c4;
+    font-size: 15px;
+ }
+
+ .btn-group{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+ }
+
+ .form input[type='radio']{
+    opacity: 0;
+ }
+
+ .form .btn-group label{
+    cursor: pointer;
+    border: 2px solid;
+    border-image: linear-gradient(
+        69deg, --gradient-grey
+    );
+    border-color: rgb(1, 107, 107);
+    padding: 10px;
+    font-size: 18px;
+ }
+
+ input[type='submit']{
+    display: block;
+    width: 230px;
+    margin: 25px auto;
+    cursor: pointer;
+    color: var(--white-color);
+    font-size: 16px;
+    margin-top: 10px;
+    padding: 10px 40px;
+    background: linear-gradient(
+    80deg, var(--gradient-white), var(--gradient-red)
+   );
+   border: none;
+ }
+
+ /* Design citation */
+ #citations{
+    margin: 90px ;
+    font-family: 'Space Grotesk';
+ }
+
+ #citations .citation-carte{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+ }
+#citations .citation-texte{
+   font-size: 20px;
+}
+
+ #citations .citation-auteur{
+    padding-top: 15px;
+    font-size: 12px;
+ }
+
+ #citations .guillemet-close{
+   float: right;
+ }
+
+ 
+
+/*footer*/
+footer{
+   margin-top: 163px;
+}
+ footer .text-footer{
+   font-family: 'Space Grotesk';
+   text-align: center;
+   font-size: 12px;
+ }
+ footer .social-footer{
+   text-align: center;
+   margin: 50px;
+ }
+
+ footer .social-item{
+   padding: 15px;
+ }
+
+/*RESPONSIVE*/
+/*Styles pour desktop et mobile */
+nav {
+   display: flex;
+   align-items: center;
+}
+
+nav img {
+   height: 50px;
+}
+
+nav ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+nav ul li {
+   display: inline-block;
+   margin-right: 20px;
+}
+
+nav ul li a {
+   color: white;
+   text-decoration: none;
+}
+
+
+/* boutton*/
+
+
+
